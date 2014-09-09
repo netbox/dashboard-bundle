@@ -5,9 +5,19 @@
     <title>{% block title %}Dashboard{% endblock %}</title>
     {% block stylesheets %}{% endblock %}
     <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <style>
+        .container-fluid {
+            margin-right: auto;
+            margin-left: auto;
+            max-width: 1920px;
+        }
+    </style>
 </head>
 <body>
 {% block dashboard_body %}{% endblock %}
+<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 {% block javascripts %}{% endblock %}
 </body>
 </html>
